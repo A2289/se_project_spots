@@ -1,0 +1,20 @@
+.footer {
+    font-family: poppins, Arial, Helvetica, sans-serif;
+    font-weight: 400; 
+    font-size: 16px;
+    line-height: 1;
+    letter-spacing: 0; 
+    padding: 60px 0; 
+}
+
+@media screen and (max-width: 627px) {
+    .footer {
+    font-family: poppins, Arial, Helvetica, sans-serif;
+    font-weight: 400; 
+    font-size: 16px;
+    line-height: 1;
+    letter-spacing: 0; 
+    padding: 60px 0;   
+    } 
+    
+} 
