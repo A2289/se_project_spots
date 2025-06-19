@@ -1,20 +1,18 @@
 .footer {
-    font-family: poppins, Arial, Helvetica, sans-serif;
+    font-family: Poppins, Arial, Helvetica, sans-serif; 
     font-weight: 400; 
     font-size: 16px;
     line-height: 1;
     letter-spacing: 0; 
     padding: 60px 0; 
+    color: rgba(33, 33, 33, 1) ; 
 }
 
-@media screen and (max-width: 627px) {
-    .footer {
-    font-family: poppins, Arial, Helvetica, sans-serif;
-    font-weight: 400; 
-    font-size: 16px;
-    line-height: 1;
-    letter-spacing: 0; 
-    padding: 60px 0;   
-    } 
-    
-} 
+.footer__text{
+    padding: 0; 
+    margin: 0 auto;
+    text-align: center; 
+       color: rgba(33, 33, 33, 1) ; 
+       opacity: 0.7; 
+}
+
