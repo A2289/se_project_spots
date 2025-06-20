@@ -16,4 +16,4 @@ Explaing project video: https://drive.google.com/file/d/1r9PDCxzfuWOZp8ak6BT419U
 
 This webpage is deployed to GitHub Pages
 
-- Deployment Link: https://a2289.github.io/se_project_spots-main/  
+- Deployment Link: https://github.com/A2289/se_project_spots
