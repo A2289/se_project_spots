@@ -51,7 +51,7 @@
   opacity: 1;
 }
 
-.profile__add-btn:hover {
+.profile__new-post-btn:hover {
   opacity: 0.8; 
    } 
 
@@ -70,8 +70,8 @@
   cursor: pointer; 
 }
 
-.profile__add-btn {
-  font-family: poppins, Arial, Helvetica, sans-serif;
+.profile__new-post-btn {
+  font-family: poppins, Arial, Helvetica, sans-serif; 
   font-size: 16px;
   font-weight: 500;
   color: #fcf5e5;
