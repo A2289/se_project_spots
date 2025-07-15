@@ -1,15 +1,15 @@
 const editProfileBtn = document.querySelector(".profile__edit-btn"); 
 const editProfileModal = document.querySelector("#edit-profile-modal"); 
-const editProfileCloseBtn = editProfileModal ? editProfileModal.querySelector(".modal__close-btn"): null;
-const editProfileForm = editProfileModal.querySelector(".modal__form");  
+const editProfileCloseBtn = editProfileModal.querySelector(".modal__close-btn");
+const editProfileForm = editProfileModal.querySelector(".modal__form");
 
-const editProfileNameInput = editProfileModal ? editProfileModal.querySelector("#edit-profile-name") : null;
-const editProfileDescriptionInput = editProfileModal ? editProfileModal.querySelector("#edit-profile-description") : null;
+const editProfileNameInput = editProfileModal.querySelector("#edit-profile-name");
+const editProfileDescriptionInput = editProfileModal.querySelector("#edit-profile-description");
 
 const newPostBtn = document.querySelector(".profile__new-post-btn");
 const newPostModal = document.querySelector("#new-post-modal");
-const newPostCloseBtn = newPostModal ? newPostModal.querySelector(".modal__close-btn") : null;
-const newPostForm = newPostModal.querySelector(".modal__form"); 
+const newPostCloseBtn = newPostModal.querySelector(".modal__close-btn");
+const newPostForm = newPostModal.querySelector(".modal__form");
 
 const profileNameEl = document.querySelector(".profile__name");
 const profileDescriptionEl = document.querySelector(".profile__description"); 
