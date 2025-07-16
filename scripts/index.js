@@ -9,7 +9,7 @@ const editProfileDescriptionInput = editProfileModal.querySelector("#edit-profil
 const newPostBtn = document.querySelector(".profile__new-post-btn");
 const newPostModal = document.querySelector("#new-post-modal");
 const newPostCloseBtn = newPostModal.querySelector(".modal__close-btn");
-const newPostForm = newPostModal.querySelector(".modal__form");
+const newPostForm = document.forms["new-post-form"];
 
 const profileNameEl = document.querySelector(".profile__name");
 const profileDescriptionEl = document.querySelector(".profile__description"); 
@@ -43,7 +43,18 @@ newPostBtn.addEventListener("click", function () {
 
     function handlenewPostSubmit(evt) {
     evt.preventDefault();
-   newPostModal.classList.remove("modal_is-opened"); 
-  }
+    // Create a FormData object from the form
+  const formData = new FormData(evt.target);
+
+  // Convert FormData to a plain object to log it easily
+  const data = {};
+  formData.forEach((value, key) => {
+    data[key] = value;
+  });
+
+  console.log(data); // 👈 This logs the form input values
+
+  newPostModal.classList.remove("modal_is-opened"); // Close the modal
+}
 
   newPostForm.addEventListener("submit", handlenewPostSubmit); 
