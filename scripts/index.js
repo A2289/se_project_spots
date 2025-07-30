@@ -93,5 +93,5 @@ function handlenewPostSubmit(evt) {
 newPostForm.addEventListener("submit", handlenewPostSubmit);
 
 initialCards.forEach(function (item) {
-console.log(item.name, item.link); // Print initial cards to console 
+ 
 }); 
