@@ -44,6 +44,28 @@ const newPostForm = newPostModal.querySelector(".modal__form");
 const profileNameEl = document.querySelector(".profile__name");
 const profileDescriptionEl = document.querySelector(".profile__description");
 
+const cardTemplate = document
+.querySelector("#card-template")
+.content.querySelector(".card");
+const cardsList = document.querySelector(".cards__list");
+
+function getCardElement(data) {
+  const cardElement = cardTemplate.cloneNode(true);
+  const cardTitleEl= cardElement.querySelector(".card__title"); 
+  const cardImageEl= cardElement.querySelector(".card__image"); 
+
+  cardImageEl.src = data.link; 
+  cardImageEl.alt = data.name;
+  cardTitleEl.textContent = data.name; 
+
+  const cardlikeBtnEl = cardElement.querySelector(".card__like-button");
+  cardlikeBtnEl.addEventListener("click", () => {
+    cardlikeBtnEl.classList.toggle("card__like-button_active");
+  }); 
+  
+  return cardElement; 
+}
+
 function openModal(modal) {
   modal.classList.add("modal_is-opened");
 }
@@ -86,12 +108,18 @@ function handlenewPostSubmit(evt) {
   formData.forEach((value, key) => {
     data[key] = value;
   });
-  console.log(data); // Print form data to console
+
+  const cardElement = getCardElement({
+    name: captionInputEl.value,
+    link: LinkInputEl.value,
+  });
+  cardsList.prepend(cardElement); 
   newPostModal.classList.remove("modal_is-opened");
 }
 
 newPostForm.addEventListener("submit", handlenewPostSubmit);
 
 initialCards.forEach(function (item) {
- 
+ const cardElement = getCardElement(item);
+ cardsList.append(cardElement); 
 }); 
